@@ -34,11 +34,11 @@ for i = 1:m
     x = X(i,:);
     x = x.';
     [M,I] = max(sigmoid(all_theta*x));
-    if I == 10
-        p(i)= 0;
-    else 
+%    if I == 10
+%        p(i)= 0;
+%    else 
         p(i) = I;
-    end
+%    end
 end
 
 
